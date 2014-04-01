@@ -3,11 +3,6 @@ sbp_baremetalsoft Cookbook
 This cookbook will deploy the baretail and baregrep tools to a Windows system
 
 
-Requirements
-------------
-The files are hard to get via the Internet, so you need to put it on a local repo.
-
-
 Attributes
 ----------
 default['baremetalsoft']['url']           = ''
