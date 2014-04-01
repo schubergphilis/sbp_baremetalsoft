@@ -18,5 +18,7 @@
 #
 
 default['baremetalsoft']['baregrep']['url'] = 'https://baremetalsoft.com/baregrep/download.php?p=m'
+default['baremetalsoft']['baregrep']['checksum'] = '1ad56390fe51d75e36d4aad4fd1511eb295a82e9e3a8dd21c2eaa9814eb4ceb6'
 default['baremetalsoft']['baretail']['url'] = 'https://baremetalsoft.com/baretail/download.php?p=m'
+default['baremetalsoft']['baretail']['checksum'] = '160d6a3bdc9d64677643376f82e559eb4112289e6b6d722b5b3b32699d18bca9'
 default['baremetalsoft']['install_dir']  	  = 'C:\Program Files\BareMetalSoft'

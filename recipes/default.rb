@@ -17,17 +17,18 @@
 # limitations under the License.
 #
 
-
 directory node['baremetalsoft']['install_dir'] do
   recursive true
 end
 
 remote_file "#{node['baremetalsoft']['install_dir']}/baregrep.exe" do
-  source "#{node['baremetalsoft']['baregrep']['url']}"
+  source node['baremetalsoft']['baregrep']['url']
+  checksum node['baremetalsoft']['baregrep']['checksum']
   not_if { File.exists?("#{node['baremetalsoft']['install_dir']}/baregrep.exe") }
 end
 
 remote_file "#{node['baremetalsoft']['install_dir']}/baretail.exe" do
-  source "#{node['baremetalsoft']['baretail']['url']}"
+  source node['baremetalsoft']['baretail']['url']
+  checksum node['baremetalsoft']['baretail']['checksum']
   not_if { File.exists?("#{node['baremetalsoft']['install_dir']}/baretail.exe") }
 end
